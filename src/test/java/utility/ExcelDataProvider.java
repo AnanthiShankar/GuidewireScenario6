@@ -1,0 +1,47 @@
+package utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelDataProvider {
+	public XSSFWorkbook wb;
+	public ExcelDataProvider() {
+		File src=new File("./TestData/TestDataSheet.xlsx");
+		try {
+			FileInputStream fis= new FileInputStream(src);
+			
+			 wb=new XSSFWorkbook(fis);
+			
+		}catch(Exception e) {
+			System.out.println("Unable to read the file"+e.getMessage());
+		}
+	}
+	public String getStringData(String sheetName,int rowNo,int colNo) {
+		return wb.getSheet(sheetName).getRow(rowNo).getCell(colNo).getStringCellValue();
+		
+	}
+	public String getStringData(int sheetindex,int rowNo,int colNo) {
+		return wb.getSheetAt(sheetindex).getRow(rowNo).getCell(colNo).getStringCellValue();
+		
+	}
+	public int getNumericData(String sheetName,int rowNo,int colNo) {
+		return (int) wb.getSheet(sheetName).getRow(rowNo).getCell(colNo).getNumericCellValue();
+		
+	}
+	public int getNumericData(int sheetindex,int rowNo,int colNo) {
+		return (int) wb.getSheetAt(sheetindex).getRow(rowNo).getCell(colNo).getNumericCellValue();
+		
+	}
+	public int getRowCount(int sheetIndex) {
+		int lastRow= wb.getSheetAt(sheetIndex).getLastRowNum();
+		return lastRow;
+		
+	}
+	public int getRowCount(String sheetName) {
+		int lastRow= wb.getSheet(sheetName).getLastRowNum();
+		return lastRow;
+		
+	}
+}
