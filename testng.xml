@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="True">
+<test thread-count="3" name="Test">
+  <classes>
+   <class name="StepDefinitions.LoginPageTest"/>
+  
+  </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

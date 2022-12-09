@@ -6,9 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-	features="Features",
-	glue={"StepDefinitions"})
-
+	features="Features/SearchHotel.feature",
+	glue={"StepDefinitions"}
+	//plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+	)
 public class Runner extends AbstractTestNGCucumberTests{
 
 }

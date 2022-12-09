@@ -16,22 +16,13 @@ public class LoginPage extends FirstandFinal {
 		PageFactory.initElements(driver, this);
 	}
  /************************ Attributes and its values*****************************/
-//	 @FindBy(id="username") 
-//	 WebElement uname;
-//	 @FindBy(name="password") 
-//	 WebElement password;
-//	 @FindBy(id="login") 
-//	 WebElement loginbutton;
-//	 
-//	 @FindBy(xpath="//*[@id=\"username_show\"")
-//	 WebElement stringValidation;
-	
+
 	By uname=(By.id("username") );
 	By password=(By.name("password") );
 	By loginbutton=(By.id("login") );
-	By stringValidation=By.xpath("//*[@id=\"username_show\"");
+	//By stringValidation=By.className("login_title");
  /************************ Attributes and its values*****************************/
-	 /************************ methods*****************************/
+	/************************ methods*****************************/
 	 public void LoginActtion() {
 		
 		 driver.findElement(loginbutton).click();
@@ -48,11 +39,16 @@ public class LoginPage extends FirstandFinal {
 		 driver.findElement(uname).sendKeys(usname);
 		 
 	 }
-	 public void printMessage() {
-			
-		
-		 assertEquals(stringValidation, "Hello vasuvespag!");
-		 
-	 }
+		/*
+		 * public void printMessage() { // driver.findElement(stringValidation)
+		 * 
+		 * //System.out.println(driver.findElement(stringValidation).getText()); String
+		 * Actual=driver.findElement(stringValidation).getText(); if
+		 * (Actual.contains("Search Hotel")){
+		 * System.out.println("Search hotel page is displayed"); }
+		 * 
+		 * 
+		 * }
+		 */
 	 /************************ methods*****************************/
 }

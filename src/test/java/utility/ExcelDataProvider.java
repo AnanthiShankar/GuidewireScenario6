@@ -44,4 +44,19 @@ public class ExcelDataProvider {
 		return lastRow;
 		
 	}
+	public int getRowNo(String sheetName,String userId) {
+		int rowno=-1;
+		String value="";
+		for (int i=0;i<=getRowCount(sheetName);i++) {
+			value=wb.getSheet(sheetName).getRow(i).getCell(0).getStringCellValue();
+			if (value.equals(userId)){
+				rowno= i;
+				break;
+			}
+		}
+		
+		return rowno;
+		
+			
+	}
 }

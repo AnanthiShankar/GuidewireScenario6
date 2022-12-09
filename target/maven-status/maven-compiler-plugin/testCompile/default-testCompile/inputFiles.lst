@@ -1,8 +1,12 @@
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\pages\FirstandFinal.java
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\utility\BrowserUtil.java
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\utility\ExcelDataProvider.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\testcases\TestSteps.java
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\runner\Runner.java
-C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\StepDefinitions\TestSteps.java
-C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\testcases\LoginPageTest.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\StepDefinitions\LoginPageTest.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\parallel\ParallelRun.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\OverrideFunctions\WebElements.java
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\pages\LoginPage.java
 C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\utility\ConfigDataProvider.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\pages\SearchHotel.java
+C:\Users\QN271GF\JavaWorkspaceFinal-master\GuidewireScenario6\src\test\java\utility\ReportSpark.java

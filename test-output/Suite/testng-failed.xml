@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="StepDefinitions.LoginPageTest">
+        <methods>
+          <include name="user_is_on_the_guidewirepage"/>
+          <include name="user_is_logging_in_guidewire_home_page_with_values_present_in_login_pagesheet_and"/>
+          <include name="exit_the_browser"/>
+        </methods>
+      </class> <!-- StepDefinitions.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
